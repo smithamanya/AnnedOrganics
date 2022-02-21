@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Water Detoxification Programme</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		.footer
+		{
+			text-align: center;
+			font-size: 15px;
+			padding-top: 20px;
+		}
+		p:hover, footer:hover
+		{
+			color: orange;
+		}
+		.foot
+		{
+			height: 50px;
+		}
+		.logo
+		{
+			height: 30px;
+			width: 30px;
+		}
+		.caret,.dropdown-menu,.h5
+		{
+			color: orange;
+		}
+		p:hover, caret,.dropdown-menu,.h5:hover
+		{
+			color: white;
+		}
+		/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 12px; /* 15px padding */
+  width: 90px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#whatsApp {
+  top: 490px;
+  background-color: #04AA6D;
+}
+
+#facebook {
+  top: 550px;
+  background-color: #3b5998; /* Blue */
+}
+
+#instagram {
+  top: 430px;
+  background-color: #bc2a8d; /* Red */
+}
+
+#twitter {
+  top: 610px;
+  background-color: #1DA1F2 /* Light Black */
+}
+.fb,.ig,.wh,.tw
+{
+	height: 30px;
+}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- You can always add a logo here -->
+      <a class="navbar-brand" href="home.html"><img class="logo" src="Resources/psf logo.jpeg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+         <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Challenges
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="sevendays.html"><h5 class="h5">7-Days Challenge</h5></a></li>
+          <li><a href="twentyone.html"><h5 class="h5">21-Days Challenge</h5></a></li>
+          <li><a href="thirtydays.html"><h5 class="h5">30-Days Challenge</h5></a></li>
+        </ul>
+      </li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Health Tips
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="danielfast.html"><h5 class="h5">Daniel-Fast Guidelines</h5></a></li>
+          <li><a href="healthtips.html"><h5 class="h5">Daily Health Tips</h5></a></li>
+          <li><a href="waterdetox.html"><h5 class="h5">Water Detoxification Programme</h5></a></li>
+        </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Order Online</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Adding hover sidenav buttons/glyphicons -->
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="instagram"><img class="ig" src="Resources/instagram.svg"></a>
+  <a href="#" id="whatsApp"><img class="wh" src="Resources/whatsApp.svg"></a>
+  <a href="#" id="facebook"><img class="fb" src="Resources/facebook.svg"></a>
+  <a href="#" id="twitter"><img class="tw" src="Resources/twitter.svg"></a>
+</div>
+<div class="foot">
+		<footer class="footer" 
+		>Elite Creatives &copy; 2021
+	</footer>
+</div>
+</body>
+</html>

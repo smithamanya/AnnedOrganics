@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<!-- For desktop, remember to include style so that on clicking it either opens on a new tab or loads there -->
+<head>
+	<title>AnneD Organic Smoothies</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+	<style type="text/css">
+		body
+		{
+			background-color: green;
+			margin: 0;
+		}
+		.jumbotron
+		{
+			font-family: lucida calligraphy;
+			text-shadow: transparent;
+			text-decoration: blink;
+			text-align: center;
+			font-size: 70px;
+			background-color: grey;
+			margin: 10px;
+			border-radius: 10px;
+		}
+		p:hover, h1:hover
+		{
+			color: orange;
+		}
+		#box1
+		{
+			background-image: url(Resources/ingredients.webp);
+			height: 100vh;
+			width: 100%;
+			background-size: cover;
+			display: table;
+			background-attachment: fixed;
+		}
+		#box2
+		{
+			background-image: url(Resources/smoothie2.webp);
+			height: 100vh;
+			width: 100%;
+			background-size: cover;
+			display: table;
+			background-attachment: fixed;
+		}
+		#box3
+		{
+			background-image: url(Resources/fruits1.webp);
+			height: 100vh;
+			width: 100%;
+			background-size: cover;
+			display: table;
+			background-attachment: fixed;
+		}
+		.breko
+		{
+			font-family: arial black;
+			text-align: center;
+			font-size: 50px;
+			color: black;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.lunch
+		{
+			font-family: arial black;
+			text-align: center;
+			font-size: 50px;
+			color: black;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.supper
+		{
+			font-family: arial black;
+			text-align: center;
+			font-size: 50px;
+			color: black;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.footer
+		{
+			text-align: center;
+			font-size: 15px;
+			padding-top: 20px;
+		}
+		p:hover, footer:hover
+		{
+			color: orange;
+		}
+		.foot
+		{
+			height: 50px;
+		}
+		.logo
+		{
+			height: 30px;
+			width: 30px;
+		}
+		.caret,.dropdown-menu,.h5
+		{
+			color: orange;
+		}
+		p:hover, caret,.dropdown-menu,.h5:hover
+		{
+			color: white;
+		}
+		/*Style for sliding animation on scroll. Remember to include the .slideanim to intended element that you'd want to apply the effect*/
+		.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 12px; /* 15px padding */
+  width: 90px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#whatsApp {
+  top: 490px;
+  background-color: #04AA6D;
+}
+
+#facebook {
+  top: 550px;
+  background-color: #3b5998; /* Blue */
+}
+
+#instagram {
+  top: 430px;
+  background-color: #bc2a8d; /* Red */
+}
+
+#twitter {
+  top: 610px;
+  background-color: #1DA1F2 /* Light Black */
+}
+.fb,.ig,.wh,.tw
+{
+	height: 30px;
+}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- You can always add a logo here -->
+      <a class="navbar-brand" href="home.html"><img class="logo" src="Resources/psf logo.jpeg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <!-- Dropdown on the Navbar -->
+         <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Challenges
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="sevendays.html"><h5 class="h5">7-Days Challenge</h5></a></li>
+          <li><a href="twentyone.html"><h5 class="h5">21-Days Challenge</h5></a></li>
+          <li><a href="thirtydays.html"><h5 class="h5">30-Days Challenge</h5></a></li>
+        </ul>
+      </li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Health Tips
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="danielfast.html"><h5 class="h5">Daniel-Fast Guidelines</h5></a></li>
+          <li><a href="healthtips.html"><h5 class="h5">Daily Health Tips</h5></a></li>
+          <li><a href="waterdetox.html"><h5 class="h5">Water Detoxification Programme</h5></a></li>
+        </ul>
+      </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Order Online</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div>
+	<p>
+		<h1 class="jumbotron">AnneD Organic Smoothies</h1>
+	</p>
+</div>
+	<hr>
+	<div id="box1" class="col-sm-8 col-md-8">
+		<h1 class="breko">Breakfast</h1>
+	</div>
+	<div id="box2" class="col-sm-8 col-md-8">
+		<h1 class="lunch">Lunch</h1>
+	</div>
+	<div id="box3" class="col-sm-8 col-md-8">
+		<h1 class="supper">Supper</h1>
+	</div>
+	<!-- Adding hover sidenav buttons/glyphicons -->
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="instagram"><img class="ig" src="Resources/instagram.svg"></a>
+  <a href="#" id="whatsApp"><img class="wh" src="Resources/whatsApp.svg"></a>
+  <a href="#" id="facebook"><img class="fb" src="Resources/facebook.svg"></a>
+  <a href="#" id="twitter"><img class="tw" src="Resources/twitter.svg"></a>
+</div>
+	<!-- Footer comes here -->
+	<div class="foot">
+		<footer class="footer" 
+		>Elite Creatives &copy; 2021
+	</footer>
+</div>
+</body>
+</html>
